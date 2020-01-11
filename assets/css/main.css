@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, tab {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -2165,7 +2165,9 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-
+		.image img {
+		image-orientation: from-image;
+	}
 		.image img {
 			display: block;
 		}
@@ -2204,6 +2206,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5em 0;
 			width: 100%;
+
 		}
 
 			.image.main img {
@@ -2212,7 +2215,7 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				.image.main {
+				.image.main{
 					margin: 1.5em 0;
 				}
 
@@ -3415,7 +3418,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.55;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3495,7 +3498,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #307ED6;
 		}
 
 		#banner.style3:after {
@@ -3941,6 +3944,14 @@ input, select, textarea {
 		opacity: 1;
 		visibility: visible;
 	}
+
+	.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 
 		body.is-menu-visible #menu .inner {
 			-moz-transform: none;
